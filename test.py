@@ -14,9 +14,10 @@ from network import network
 from util import loss
 from util import plot
 import warnings
-from network.model import Ganomaly
-from network.umodel import UGanomaly
-from network.SAmodel import SAGanomaly
+#from network.model import Ganomaly
+#from network.umodel import UGanomaly
+#from network.SAmodel import SAGanomaly
+from network.SSAmodel import SSAGanomaly
 from torch.serialization import SourceChangeWarning
 warnings.filterwarnings("ignore", category=SourceChangeWarning)
 
@@ -25,15 +26,15 @@ def get_args():
     
     parser = argparse.ArgumentParser()
     #'/home/ali/datasets/train_video/NewYork_train/train/images'
-    parser.add_argument('-noramldir','--normal-dir',help='image dir',default=r"/home/ali/datasets/factory_data/2022-12-30-4cls-cropimg/crops_line")
-    parser.add_argument('-abnoramldir','--abnormal-dir',help='image dir',default= r"/home/ali/datasets/factory_data/2022-12-30-4cls-cropimg/crops_noline")
+    parser.add_argument('-noramldir','--normal-dir',help='image dir',default=r"C:\factory_data\2022-12-30\crops_line")
+    parser.add_argument('-abnoramldir','--abnormal-dir',help='image dir',default= r"C:\factory_data\2022-12-30\crops_noline")
     parser.add_argument('-imgsize','--img-size',type=int,help='image size',default=32)
     parser.add_argument('-nz','--nz',type=int,help='compress size',default=100)
     parser.add_argument('-nc','--nc',type=int,help='num of channels',default=3)
     parser.add_argument('-lr','--lr',type=float,help='learning rate',default=2e-4)
     parser.add_argument('-batchsize','--batch-size',type=int,help='train batch size',default=1)
-    parser.add_argument('-savedir','--save-dir',help='save model dir',default=r"/home/ali/GitHub_Code/cuteboyqq/GANomaly/skip-GANOMALY-Pytorch/runs/train/2023-01-06/32-nz100-ngf64-ndf64-SkipAttentionGanomaly")
-    parser.add_argument('-weights','--weights',help='model dir',default= r"/home/ali/GitHub_Code/cuteboyqq/GANomaly/skip-GANOMALY-Pytorch/runs/train/2023-01-06/32-nz100-ngf64-ndf64-SkipAttentionGanomaly")
+    parser.add_argument('-savedir','--save-dir',help='save model dir',default=r"C:\GitHub_Code\cuteboyqq\GANomaly\Skip-CBAM-SelfAttention-GANomaly-Pytorch\runs\train\2023-01-14\32-nz100-ngf64-ndf64-SkipCBAM-SelfAttention-Ganomaly")
+    parser.add_argument('-weights','--weights',help='model dir',default= r"C:\GitHub_Code\cuteboyqq\GANomaly\Skip-CBAM-SelfAttention-GANomaly-Pytorch\runs\train\2023-01-14\32-nz100-ngf64-ndf64-SkipCBAM-SelfAttention-Ganomaly")
     parser.add_argument('-viewimg','--view-img',action='store_true',help='view images')
     parser.add_argument('-train','--train',action='store_true',help='view images')
     return parser.parse_args()    
@@ -47,7 +48,7 @@ def main():
 def test(args):
     args.view_img = False
     if args.view_img:
-        BATCH_SIZE_VAL = 1
+        BATCH_SIZE_VAL = 15
         SHOW_MAX_NUM = 10
         shuffle = True
     else:
@@ -71,26 +72,26 @@ def test(args):
     #model = ConvAutoencoder()
     #skip_ganomaly = UGanomaly(args)
     #ganomaly = Ganomaly(args)
-    skip_attention_ganomaly = SAGanomaly(args)
+    skip_CBAM_SelfAttention_ganomaly = SSAGanomaly(args)
     #model = network.NetG(isize=IMAGE_SIZE_H, nc=3, nz=100, ngf=64, ndf=64, ngpu=1, extralayers=0)
     #model = torch.load(modelPath).to(device)
     #model.load_state_dict(torch.load(modelPath))
     print('load model weight from {} success'.format(args.weights))
     print('VAL_DATA_DIR : {}'.format(args.normal_dir))
     
-    normal_loss = infer(test_loader,SHOW_MAX_NUM,skip_attention_ganomaly,criterion,normal_loss,
+    normal_loss = infer(test_loader,SHOW_MAX_NUM,skip_CBAM_SelfAttention_ganomaly,criterion,normal_loss,
             'normal',device,args)
     
-    anomaly_loss = infer(defeat_loader,SHOW_MAX_NUM,skip_attention_ganomaly,criterion,anomaly_loss,
+    anomaly_loss = infer(defeat_loader,SHOW_MAX_NUM,skip_CBAM_SelfAttention_ganomaly,criterion,anomaly_loss,
             'anomaly',device,args)
     
     
     if not args.view_img:
-        loss_list = [0.0,0.5,1.0,1.4,1.6,1.7,1.8,1.9,2.0,2.1,2.2,2.3,2.4,2.50,2.75,3.0,4.0,5.0,6.0]
-        skip_attention_ganomaly.plot_two_loss_histogram(normal_loss,anomaly_loss,"2023-01-03-ganomaly-histogram")
+        loss_list = [0.0,0.5,1.0,1.4,1.6,1.7,1.8,1.9,2.0,2.1,2.2,2.3,2.4,2.50,2.75,3.0,4.0,5.0,5.4,5.6,5.8,6.0,6.4,6.6,6.8,7.0,7.5,8.0,8.5,9.0]
+        skip_CBAM_SelfAttention_ganomaly.plot_two_loss_histogram(normal_loss,anomaly_loss,"2023-01-03-ganomaly-histogram")
         plot.plot_loss_distribution(SHOW_MAX_NUM,normal_loss,anomaly_loss)
         
-        skip_attention_ganomaly.Analysis_two_list_UserDefineLossTH(normal_loss,anomaly_loss,"2023-01-03-ganomaly-histogram2",loss_list)
+        skip_CBAM_SelfAttention_ganomaly.Analysis_two_list_UserDefineLossTH(normal_loss,anomaly_loss,"2023-01-03-ganomaly-histogram2",loss_list)
 class UnNormalize(object):
     def __init__(self, mean, std):
         self.mean = mean
@@ -147,7 +148,7 @@ def infer(data_loader,
         images = images.to(device)
         outputs = model(images)
         #gen_imag, latent_i, latent_o = outputs
-        error_g, error_d, fake_img, model_g, model_d = outputs
+        error_g, error_d, fake_img, model_g, model_d, error_g_attn, error_g_ano_attn = outputs
         loss = error_g
         #loss = compute_loss(outputs,images,criterion)
         loss_list.append(float(loss.detach().cpu().numpy()))
