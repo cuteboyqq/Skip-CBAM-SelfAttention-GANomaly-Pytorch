@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ### implement 
 [(Back to menu)](#table-of-contents)
 
-1. implement skip-CBAM-GANomaly first, and then start addind self-Attention into skip-CBAM-GANomaly network
+1. implement skip-CBAM-GANomaly first, and then start adding self-Attention into skip-CBAM-GANomaly network
 
 ![CBAM-ori](https://user-images.githubusercontent.com/58428559/212244936-6fc7e821-f549-445d-85e7-d0bc6aaf9572.png)
 
