@@ -19,8 +19,6 @@ ref from paper
 
 https://arxiv.org/pdf/1805.08318.pdf
 
-![image](https://user-images.githubusercontent.com/58428559/212245901-1bc9d2bc-4588-4192-bd91-196b06f37da5.png)
-
 
 
 [(Back to top)](#table-of-contents)
