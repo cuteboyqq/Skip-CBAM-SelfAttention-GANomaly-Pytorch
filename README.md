@@ -119,9 +119,7 @@ Custom Dataset
 python train.py --img-dir "[train dataset dir]" --batch-size 64 --img-size 32 --epoch 20
 ```
 
-![image](https://user-images.githubusercontent.com/58428559/210168476-2cb1d156-d373-4bcc-84f4-89ef64679728.png)
-
-
+![image](https://user-images.githubusercontent.com/58428559/212382881-93c31c83-413a-42c4-a11c-aa3ad9e66643.png)
 
 ### Test
 [(Back to menu)](#table-of-contents)
