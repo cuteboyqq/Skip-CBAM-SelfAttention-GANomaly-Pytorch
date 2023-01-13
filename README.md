@@ -61,12 +61,14 @@ pip install -r requirements.txt
 
 ### SkipCBAM-AutoEncoder
 [(Back to menu)](#table-of-contents)
+
 1. implement skip-CBAM-GANomaly first, and then start adding self-Attention into skip-CBAM-GANomaly network
 
 ![CBAM-ori](https://user-images.githubusercontent.com/58428559/212244936-6fc7e821-f549-445d-85e7-d0bc6aaf9572.png)
 
 ### Self-Attention
 [(Back to menu)](#table-of-contents)
+
 below image is self-Attention network , ref. from paper https://arxiv.org/pdf/1805.08318.pdf
 
 ![image](https://user-images.githubusercontent.com/58428559/212248977-9d1689b4-b29c-4ff6-843d-b5ae95a55b07.png)
