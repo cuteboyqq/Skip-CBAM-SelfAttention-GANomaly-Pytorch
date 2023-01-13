@@ -121,3 +121,7 @@ Skip-GANomaly: Skip Connected and Adversarially Trained Encoder-Decoder Anomaly 
 
 https://arxiv.org/pdf/1901.08954.pdf
 
+Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation
+
+https://arxiv.org/pdf/1805.08318.pdf
+
