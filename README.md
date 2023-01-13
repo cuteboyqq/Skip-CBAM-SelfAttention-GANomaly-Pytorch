@@ -15,9 +15,7 @@ implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard
    -The loss function is not same as paper, maybe result in false result
 
 ### Hard-Augmentation 
-ref from paper 
-
-https://arxiv.org/pdf/1805.08318.pdf
+l just implement cutout augmgnetation...
 
 
 
