@@ -4,6 +4,8 @@ implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard
 
 ### Implement-Issue
 
+[(Back to top)](#table-of-contents)
+
    -Generate fake image have some black images
    
    -Train attetion failed if the input_attn = 1, but succeed when input_attn=empty
@@ -31,7 +33,7 @@ Generator +  Discriminator model
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Attention-NetWork-Pytorch](#Attention-NetWork-Pytorch)
-- - [Implement-Issue](#Implement-Issue)
+- [Implement-Issue](#Implement-Issue)
 - [Requirement](#Requirement)
 - [implement](#implement)
 - [AttentionNetwork](#AttentionNetwork)
