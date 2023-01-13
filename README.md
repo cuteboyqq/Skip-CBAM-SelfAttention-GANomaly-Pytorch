@@ -1,4 +1,4 @@
-### skip-GANomaly-Pytorch
+### Attention-NetWork-Pytorch
 [(Back to top)](#table-of-contents)
 
 Generator +  Discriminator model 
@@ -28,9 +28,9 @@ pip install -r requirements.txt
 ### implement 
 [(Back to top)](#table-of-contents)
 
-1. Encoder-Decoder use Unet
+1. Encoder-Decoder use Unet-skipCBAM-selfAttention
 
-![image](https://user-images.githubusercontent.com/58428559/195968483-e7b102f1-6071-4e70-8f18-0c4b749eda30.png)
+![CBAM-ori](https://user-images.githubusercontent.com/58428559/212244936-6fc7e821-f549-445d-85e7-d0bc6aaf9572.png)
 
 
 ### AttentionNetwork
