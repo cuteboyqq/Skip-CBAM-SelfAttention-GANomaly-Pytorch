@@ -1,4 +1,7 @@
 ### Attention-NetWork-Pytorch
+
+implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation , l just implement Attention Network
+
 [(Back to top)](#table-of-contents)
 
 Generator +  Discriminator model 
