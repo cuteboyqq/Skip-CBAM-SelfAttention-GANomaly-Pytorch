@@ -9,15 +9,15 @@ opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 urllib.request.install_opener(opener)
 
 import torch
-from network import network
+#from network import network
 import os
 import torchvision.transforms as transforms
 import torchvision
 import torch.nn as nn
 from util import loss
-from network.model import Ganomaly
-from network.umodel import UGanomaly
-from network.SAmodel import SAGanomaly
+#from network.model import Ganomaly
+#from network.umodel import UGanomaly
+#from network.SAmodel import SAGanomaly
 from network.SSAmodel import SSAGanomaly
 from tqdm import tqdm
 from util import color
@@ -137,15 +137,15 @@ def get_args():
     #isize=64, nz=100, nc=3
     parser = argparse.ArgumentParser()
     #'/home/ali/datasets/train_video/NewYork_train/train/images'
-    parser.add_argument('-imgdir','--img-dir',help='image dir',default=r"/home/ali/datasets/factory_data/2022-12-30-4cls-cropimg/images/train")
-    parser.add_argument('-imgtestdir','--img-testdir',help='val dataset',default=r"/home/ali/datasets/factory_data/2022-12-30-4cls-cropimg/images/val")
+    parser.add_argument('-imgdir','--img-dir',help='image dir',default=r"C:\factory_data\2022-12-30\train\crops_line")
+    parser.add_argument('-imgtestdir','--img-testdir',help='val dataset',default=r"C:\factory_data\2022-12-30\test")
     parser.add_argument('-imgsize','--img-size',type=int,help='image size',default=32)
     parser.add_argument('-nz','--nz',type=int,help='compress length',default=100)
     parser.add_argument('-nc','--nc',type=int,help='num of channel',default=3)
     parser.add_argument('-lr','--lr',type=float,help='learning rate',default=2e-4)
     parser.add_argument('-batchsize','--batch-size',type=int,help='train batch size',default=64)
     parser.add_argument('-testbatchsize','--test_batchsize',type=int,help='test batch size',default=64)
-    parser.add_argument('-savedir','--save-dir',help='save model dir',default=r"/home/ali/GitHub_Code/cuteboyqq/GANomaly/skip-GANOMALY-Pytorch/runs/train/2023-01-13/32-nz100-ngf64-ndf64-Skip-SelfAttention-Ganomaly")
+    parser.add_argument('-savedir','--save-dir',help='save model dir',default=r"./runs/train/2023-01-14/32-nz100-ngf64-ndf64-SkipCBAM-SelfAttention-Ganomaly")
     parser.add_argument('-weights','--weights',help='save model dir',default=r"")
     parser.add_argument('-epoch','--epoch',type=int,help='num of epochs',default=60)
     parser.add_argument('-train','--train',type=bool,help='train model',default=True)
