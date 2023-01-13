@@ -6,9 +6,9 @@
 implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation https://arxiv.org/pdf/1805.08318.pdf , l just implement Attention Network
 .
 
-The Attention Network is able to generate Attention maps that show which part of regoin is anomaly and normal, 
+The Attention Network is able to generate Attention maps that show which part of region in image is anomaly and normal, 
 
-and able to find anomaly images by loss value,
+and able to find anomaly images by loss value, it means if  loss value is greater than particular loss threshold, it will regard as anomaly image
 
 but the acc is lower than skip-Attention GANomaly, so need ADGAN to further detect anomaly images.
 
