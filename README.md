@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ![CBAM-ori](https://user-images.githubusercontent.com/58428559/212244936-6fc7e821-f549-445d-85e7-d0bc6aaf9572.png)
 
 
-### Implement-AttentionNetwork
+### AttentionNetwork
 [(Back to menu)](#table-of-contents)
 ![CBAM](https://user-images.githubusercontent.com/58428559/212244779-9b757168-0ad9-4db2-8931-ddaaf776c38f.png)
 
