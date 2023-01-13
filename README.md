@@ -1,4 +1,4 @@
-### Attention-NetWork-Pytorch
+### Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation-Pytorch
 [(Back to menu)](#table-of-contents)
 
 #### Anomaly Detection Network
@@ -45,7 +45,7 @@ Generator +  Discriminator model
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Attention-NetWork-Pytorch](#Attention-NetWork-Pytorch)
+- [Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation-Pytorch](#Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation-Pytorch)
 - [Implement-Issue](#Implement-Issue)
 - [Hard-Augmentation](#Hard-Augmentation)
 - [Requirement](#Requirement)
