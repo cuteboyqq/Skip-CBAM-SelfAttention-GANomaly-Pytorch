@@ -2,6 +2,12 @@
 
 implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation https://arxiv.org/pdf/1805.08318.pdf , l just implement Attention Network
 
+below image ref. from paper https://arxiv.org/pdf/1805.08318.pdf
+
+
+![image](https://user-images.githubusercontent.com/58428559/212247473-3b40b17c-c500-42df-a220-5066fa74d6dd.png)
+
+
 ### Implement-Issue
 
 [(Back to top)](#table-of-contents)
