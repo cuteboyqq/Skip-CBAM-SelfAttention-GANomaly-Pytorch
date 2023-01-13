@@ -10,7 +10,7 @@ Generator +  Discriminator model
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [skip-GANomaly-Pytorch](#skip-GANomaly-Pytorch)
+- [Attention-NetWork-Pytorch](#Attention-NetWork-Pytorch)
 - [Requirement](#Requirement)
 - [implement](#implement)
 - [AttentionNetwork](#AttentionNetwork)
