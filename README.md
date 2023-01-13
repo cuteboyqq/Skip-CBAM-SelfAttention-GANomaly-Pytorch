@@ -1,5 +1,7 @@
 ### Attention-NetWork-Pytorch
 
+[(Back to memu)](#table-of-contents)
+
 implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation https://arxiv.org/pdf/1805.08318.pdf , l just implement Attention Network
 
 below image ref. from paper https://arxiv.org/pdf/1805.08318.pdf
@@ -10,7 +12,7 @@ below image ref. from paper https://arxiv.org/pdf/1805.08318.pdf
 
 ### Implement-Issue
 
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
    -Generate fake image have some black images
    
@@ -27,7 +29,7 @@ l just implement cutout augmgnetation...
 
 
 
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
 Generator +  Discriminator model 
 
@@ -56,7 +58,7 @@ pip install -r requirements.txt
 ```
 
 ### implement 
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
 1. Encoder-Decoder use Unet-skipCBAM-selfAttention
 
@@ -68,7 +70,7 @@ pip install -r requirements.txt
 ![CBAM](https://user-images.githubusercontent.com/58428559/212244779-9b757168-0ad9-4db2-8931-ddaaf776c38f.png)
 
 ### Train-on-custom-dataset
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
 ```
 Custom Dataset
@@ -94,7 +96,7 @@ Custom Dataset
 ```
 
 ### Train
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 ```
 python train.py --img-dir "[train dataset dir]" --batch-size 64 --img-size 32 --epoch 20
 ```
@@ -104,14 +106,14 @@ python train.py --img-dir "[train dataset dir]" --batch-size 64 --img-size 32 --
 
 
 ### Test
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 ```
 python test.py --nomal-dir "[test normal dataset dir]" --abnormal-dir "[test abnormal dataset dir]" --view-img --img-size 32
 ```
 
 
 ### Lose-value-distribution
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
 Blue : normal dataset
 
@@ -128,7 +130,7 @@ Orange : abnormal dataset
 
 
 ### Reference 
-[(Back to top)](#table-of-contents)
+[(Back to memu)](#table-of-contents)
 
 GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training
 
