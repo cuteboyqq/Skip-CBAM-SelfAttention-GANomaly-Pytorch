@@ -2,12 +2,12 @@
 
 implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation https://arxiv.org/pdf/1805.08318.pdf , l just implement Attention Network
 
-Implement Issue:
-Generate fake image have some black images
-Train attetion failed if the input_attn = 1, but succeed when input_attn=empty
-The cutout augmentation  is not real, needs to further implement paper method
-Maybe it is not easy to implement in tensorflow2 
-The loss function is not same as paper, maybe result in false result
+###Implement Issue:
+-Generate fake image have some black images
+-Train attetion failed if the input_attn = 1, but succeed when input_attn=empty
+-The cutout augmentation  is not real, needs to further implement paper method
+-Maybe it is not easy to implement in tensorflow2 
+-The loss function is not same as paper, maybe result in false result
 
 ### Hard-Augmentation 
 ref from paper 
