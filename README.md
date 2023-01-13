@@ -34,6 +34,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 - [Attention-NetWork-Pytorch](#Attention-NetWork-Pytorch)
 - [Implement-Issue](#Implement-Issue)
+- [Hard-Augmentation](#Hard-Augmentation)
 - [Requirement](#Requirement)
 - [implement](#implement)
 - [AttentionNetwork](#AttentionNetwork)
