@@ -2,7 +2,7 @@
 
 implement from paper Attention Map-Guided Two-stage Anomaly Detection using Hard Augmentation https://arxiv.org/pdf/1805.08318.pdf , l just implement Attention Network
 
-### Implement-Issue:
+### Implement-Issue
 
    -Generate fake image have some black images
    
@@ -31,6 +31,7 @@ Generator +  Discriminator model
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [Attention-NetWork-Pytorch](#Attention-NetWork-Pytorch)
+- - [Implement-Issue](#Implement-Issue)
 - [Requirement](#Requirement)
 - [implement](#implement)
 - [AttentionNetwork](#AttentionNetwork)
