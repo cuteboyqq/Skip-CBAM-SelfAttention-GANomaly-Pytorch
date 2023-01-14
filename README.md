@@ -71,8 +71,7 @@ pip install -r requirements.txt
 ### GANomaly
 [(Back to menu)](#table-of-contents)
 
-![image](https://user-images.githubusercontent.com/58428559/212457220-76619ce0-d6eb-457c-afec-c60a96ff5e49.png)
-
+![image](https://user-images.githubusercontent.com/58428559/212457335-1aa137f8-46dc-4e3b-8a60-e0d5ea9900a5.png)
 
 ### SkipCBAM-AutoEncoder
 [(Back to menu)](#table-of-contents)
