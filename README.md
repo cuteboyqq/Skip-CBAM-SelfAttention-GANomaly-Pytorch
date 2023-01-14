@@ -73,9 +73,11 @@ pip install -r requirements.txt
 
 Tha base framework is GAnomaly, and modified Encoder-Decoder framework
 
+Encoder-Decoder network modification
+
 1. add skip-connection 
-2. before feature skip to Decoder,  feature do  CBAM Attetion network
-3. decoder add self-Attention
+2. Encoder features do  CBAM Attetion network and then skip to Decoder
+3. Decoder feature do self-Attention and pass to next layer as input feature
 
 ![image](https://user-images.githubusercontent.com/58428559/212457350-9031b83b-63b7-405a-8564-643d3b09c223.png)
 
