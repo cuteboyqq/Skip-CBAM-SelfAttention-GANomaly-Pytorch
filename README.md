@@ -22,6 +22,10 @@ below image ref. from paper https://arxiv.org/pdf/1805.08318.pdf
 [(Back to menu)](#table-of-contents)
 
    -Generate fake image have some black images
+   [Solution] G_loss add anomaly image loss
+   
+   ![image](https://user-images.githubusercontent.com/58428559/212488118-5a79f883-2991-43c1-8f32-a3d3d650dba0.png)
+
    
    -Train attetion failed if the input_attn = 1, but succeed when input_attn=empty
    
