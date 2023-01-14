@@ -75,9 +75,9 @@ Tha base framework is GAnomaly, and modified Encoder-Decoder framework
 
 Encoder-Decoder network modification
 
-1. add skip-connection 
-2. Encoder features do  CBAM Attetion network and then skip to Decoder
-3. Decoder feature do self-Attention and pass to next layer as input feature
+1. Skip-GANomaly : add skip-connection 
+2. Skip-CBAM-feature : Encoder features do  CBAM Attetion network and then skip to Decoder
+3. Decoder-SelfAttention : Decoder feature do self-Attention and pass to next layer as input feature
 
 ![image](https://user-images.githubusercontent.com/58428559/212457350-9031b83b-63b7-405a-8564-643d3b09c223.png)
 
