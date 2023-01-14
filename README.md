@@ -50,6 +50,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Hard-Augmentation](#Hard-Augmentation)
 - [Requirement](#Requirement)
 - [implement](#implement)
+   - [GANomaly] (#GANomaly)
    - [SkipCBAM-AutoEncoder](#SkipCBAM-AutoEncoder)
    - [Self-Attention](#Self-Attention)
    - [AttentionNetwork](#AttentionNetwork)
@@ -66,6 +67,12 @@ pip install -r requirements.txt
 
 ### implement 
 [(Back to menu)](#table-of-contents)
+
+### GANomaly
+[(Back to menu)](#table-of-contents)
+
+![image](https://user-images.githubusercontent.com/58428559/212457220-76619ce0-d6eb-457c-afec-c60a96ff5e49.png)
+
 
 ### SkipCBAM-AutoEncoder
 [(Back to menu)](#table-of-contents)
