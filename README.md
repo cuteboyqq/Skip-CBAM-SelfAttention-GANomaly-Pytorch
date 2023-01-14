@@ -50,7 +50,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Hard-Augmentation](#Hard-Augmentation)
 - [Requirement](#Requirement)
 - [implement](#implement)
-   - [GANomaly] (#GANomaly)
+   - [GANomaly](#GANomaly)
    - [SkipCBAM-AutoEncoder](#SkipCBAM-AutoEncoder)
    - [Self-Attention](#Self-Attention)
    - [AttentionNetwork](#AttentionNetwork)
